@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    width: 270px;
+    height: 129px;
+    margin-top: 0px;
+}
+
+
+
+button {
+    width: 100px;
+    height: 35px;
+    background-color: #2d78f4;
+    border: 1px solid #2d78f4;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+/*标签属性*/
+.header {
+    float: right;
+    line-height: 40px;
+    font-size: 13px;
+    position: relative;
+}
+
+.a {
+    margin-left: 15px;
+}
+
+.header a:link {
+    color: #333;
+}
+
+.header a:visited {
+    color: #333;
+}
+
+.header a:hover {
+    color: #00c;
+}
+/*导航栏*/
+.div {
+    margin: 0px 15px 0px;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.div img {
+    margin: 30px 0 0;
+    padding: 0;
+}
+
+.div a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 86px;
+    height: 50px;
+}
+
+.div div {
+    display: none;
+    width: 90px;
+    height: 100%;
+    background-color: #F0F0F0;
+    
+}
+
+.div:hover div {
+    display: block;
+}
+
+span {
+    display: block;
+    line-height: 13px;
+}
+
+.button {
+    background-color: #2d78f4;
+    width: 60px;
+    line-height: 25px;
+    color: white;
+    font-size: 13px;
+    border: none;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+.div div a:hover{
+    text-decoration:underline;
+}
+/*下拉菜单*/
+.centent {
+    margin: 0 auto;
+    width: 700px;
+    height: 200px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.center {
+    width: 300px;
+    margin: 0 auto 20px;
+}
+
+.form {
+    margin: 0 auto;
+}
+/*主体*/
+footer {
+    text-align: center;
+    width: 700px;
+    height: 100px;
+    margin: 400px auto 0;
+}
+
+p a:link {
+    color: #999;
+}
+
+p {
+    font-size: 11px;
+}
+/*底部*/

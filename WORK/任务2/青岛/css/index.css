@@ -1,0 +1,114 @@
+body {
+    background-color: #1895DE;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*背景颜色*/
+
+.bg {
+    margin: 30px auto;
+    width: 700px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+.a a:link {
+    color: #f58080
+}
+
+.a a:visited {
+    color: #9c37ce
+}
+
+.a a:hover {
+    color: #FF00FF
+}
+
+.a a:active {
+    color: #0000FF
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.a{
+	overflow: hidden;
+}
+
+
+/*顶部的div*/
+
+.img {
+    width: 164px;
+    height: 76px;
+    float: left;
+    margin: 10px auto 10px 35px;
+}
+
+.rd {
+    float: right;
+    margin: 65px 35px 0px 0;
+}
+/*a 标签位置*/
+h3{
+	text-align: center;
+	margin:10px 0 20px 0;
+}
+
+table{
+	width: 640px;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+.border{
+	width: 140px;
+	text-align: right;
+	line-height: 25px;
+}
+/*类目栏边框 和文字居右*/
+
+.span{
+	color: #E41138;
+	font-size: 13px;
+
+}/*红色文本*/
+.span1{
+	color: #1D62FD;
+	font-size: 13px;
+}/*蓝色文本*/
+.span2{
+	font-size: 13px;
+}/*文本信息*/
+.center{
+	text-align: center;
+	font-size: 12px;
+}/*表格头部文本居中*/
+
+th{
+	text-align: left;
+	color: #0D4A75;
+	margin:3px 0 3px 15px;
+	height: 25px;
+	font-size: 14px;
+	background-color:#E0D9D9;
+}
+strong{
+	font-size: 14px;
+}
+tfoot{
+	width: 640px;
+	line-height: 90px;
+	text-align: center;
+}
+footer{
+	height:50px; 
+	text-align: center;
+	font-size: 13px;
+}

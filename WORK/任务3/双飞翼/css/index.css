@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	min-width: 800px;
+	margin: 0 auto;
+	background-color: #f1f1f1;
+}
+
+
+/*全局属性*/
+
+header {
+	height: 35px;
+	background-color: #82b103;
+	margin-bottom: 15px;
+	line-height: 35px;
+	font-size: 13px;
+	text-align: center;
+}
+
+header a:link {
+	text-decoration: none;
+	color: black;
+}
+
+header a:hover {
+	background-color: cadetblue;
+	text-decoration: underline;
+	color: white;
+}
+
+
+/*头部信息*/
+
+section {
+	overflow: hidden;
+	text-align: center;
+}
+
+address {
+	font-size: 11px;
+}
+
+h4 {
+	text-align: left;
+}
+
+.inine p {
+	text-align: left;
+	
+}
+
+.center {
+	width: 100%;
+	float: left;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+.left {
+	width: 300px;
+	position: relative;
+	left: 0px;
+	float: left;
+	background-color: #FFFFFF;
+	margin-left: -100%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+
+/*左侧导航栏主体*/
+
+h2 {
+	text-align: left;
+	color: #44a203;
+}
+
+ul {
+	display: inline-block;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	margin-top: 10px;
+	height: 35px;
+	width: 130px;
+	background-color: #FFFFFF;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+ul li a {
+	line-height: 35px;
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	background-color: #82b103;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+li:hover {
+	background-color: #82b103;
+}
+
+
+/*左侧上部导航栏*/
+
+ol li a {
+	line-height: 35px;
+	text-decoration: none;
+	color: #5F9EA0;
+}
+
+ol {
+	text-align: left;
+}
+
+
+/*左侧尾部导航栏
+*/
+
+img {
+	width: 297px;
+	height: 355px;
+}
+
+
+/*左侧底部图片*/
+
+.inine {
+	width: auto;
+	background-color: #FFFFFF;
+	margin-left: 315px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	
+}
+
+
+/*文章*/
+
+footer {
+	text-align: center;
+	font-size: 13px;
+	margin-top: 10px;
+	height: 100px;
+	background-color: #FFFFFF;
+}

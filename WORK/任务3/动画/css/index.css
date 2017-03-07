@@ -1,0 +1,496 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	position: relative;
+	margin: 100px auto;
+	width: 300px;
+	height: 500px;
+}
+
+
+/*容器*/
+
+.circle {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 105px;
+	height: 100px;
+	border: 3px solid black;
+	border-radius: 50%;
+}
+
+
+/*外圆*/
+
+.ear1 {
+	position: absolute;
+	top: 132px;
+	left: 81px;
+	width: 20px;
+	height: 25px;
+	border-left: 3px solid black;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	/*-webkit-transform: scaleX(0.7);
+	-webkit-animation: 1s 1s ease infinite alternate;
+	-webkit-animation-name: ear1;
+	-moz-transform: scaleX(0.7);
+	-moz-animation: 1s 1s ease infinite alternate;
+	-moz-animation-name: ear1;
+	-ms-transform: scaleX(0.7);
+	-ms-animation: 1s 1s ease infinite alternate;
+	-ms-animation-name: ear1;
+	-o-transform: scaleX(0.7);
+	-o-animation: 1s 1s ease infinite alternate;
+	-o-animation-name: ear1;
+	transform: scaleX(0.7);*/
+	animation: 1s 1s ease infinite alternate;
+	animation-name: ear1;
+}
+
+@-webkit-keyframes ear1 {
+	from {
+		-webkit-transform: scaleX(0.7);
+	}
+	to {
+		-webkit-transform: scaleX(1.1);
+	}
+}
+
+@-moz-keyframes ear1 {
+	from {
+		-moz-transform: scaleX(0.7);
+	}
+	to {
+		-moz-transform: scaleX(1.1);
+	}
+}
+
+@-ms-keyframes ear1 {
+	from {
+		-ms-transform: scaleX(0.7);
+	}
+	to {
+		-ms-transform: scaleX(1.1);
+	}
+}
+
+@-o-keyframes ear1 {
+	from {
+		-o-transform: scaleX(0.7);
+	}
+	to {
+		-o-transform: scaleX(1.1);
+	}
+}
+
+@keyframes ear1 {
+	from {
+		transform: scaleX(0.7);
+	}
+	to {
+		transform: scaleX(1.1);
+	}
+}
+
+.ear2 {
+	position: absolute;
+	top: 132px;
+	left: 207px;
+	width: 20px;
+	height: 25px;
+	border-right: 3px solid black;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	-webkit-transform: scaleX(0.7);
+	-moz-transform: scaleX(0.7);
+	-ms-transform: scaleX(0.7);
+	-o-transform: scaleX(0.7);
+	transform: scaleX(0.7);
+	-webkit-animation: 1s 1s ease infinite alternate;
+	-webkit-animation-name: ear1;
+	-moz-animation: 1s 1s ease infinite alternate;
+	-moz-animation-name: ear1;
+	-ms-animation: 1s 1s ease infinite alternate;
+	-ms-animation-name: ear1;
+	-o-animation: 1s 1s ease infinite alternate;
+	-o-animation-name: ear1;
+	animation: 1s 1s ease infinite alternate;
+	animation-name: ear1;
+}
+
+
+/*耳朵*/
+
+.tail1 {
+	position: absolute;
+	top: 0px;
+	left: 159px;
+	width: 100px;
+	height: 100px;
+	border-top: 1px solid black;
+	border-left: 9px solid black;
+	border-top-left-radius: 100%;
+	-webkit-transform-origin: bottom left;
+	-webkit-transform: rotate(28deg);
+	-moz-transform-origin: bottom left;
+	-moz-transform: rotate(28deg);
+	-ms-transform-origin: bottom left;
+	-ms-transform: rotate(28deg);
+	-o-transform-origin: bottom left;
+	-o-transform: rotate(28deg);
+	transform-origin: bottom left;
+	transform: rotate(28deg);
+	-webkit-animation: 1s 1s ease infinite alternate;
+	-webkit-animation-name: tail1;
+	-moz-animation: 1s 1s ease infinite alternate;
+	-moz-animation-name: tail1;
+	-ms-animation: 1s 1s ease infinite alternate;
+	-ms-animation-name: tail1;
+	-o-animation: 1s 1s ease infinite alternate;
+	-o-animation-name: tail1;
+	animation: 1s 1s ease infinite alternate;
+	animation-name: tail1;
+}
+
+@-webkit-keyframes tail1 {
+	from {
+		-webkit-transform: rotate(1deg);
+	}
+	to {
+		-webkit-transform: rotate(28deg);
+	}
+}
+
+@-moz-keyframes tail1 {
+	from {
+		-moz-transform: rotate(1deg);
+	}
+	to {
+		-moz-transform: rotate(28deg);
+	}
+}
+
+@-ms-keyframes tail1 {
+	from {
+		-ms-transform: rotate(1deg);
+	}
+	to {
+		-ms-transform: rotate(28deg);
+	}
+}
+
+@-o-keyframes tail1 {
+	from {
+		-o-transform: rotate(1deg);
+	}
+	to {
+		-o-transform: rotate(28deg);
+	}
+}
+
+@keyframes tail1 {
+	from {
+		transform: rotate(1deg);
+	}
+	to {
+		transform: rotate(28deg);
+	}
+}
+
+.tail2 {
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	width: 100px;
+	height: 100px;
+	border-top: 1px solid black;
+	border-right: 9px solid black;
+	border-top-right-radius: 100%;
+	-webkit-transform-origin: bottom right;
+	-webkit-transform: rotate(-21deg);
+	-moz-transform-origin: bottom right;
+	-moz-transform: rotate(-21deg);
+	-ms-transform-origin: bottom right;
+	-ms-transform: rotate(-21deg);
+	-o-transform-origin: bottom right;
+	-o-transform: rotate(-21deg);
+	transform-origin: bottom right;
+	transform: rotate(-21deg);
+	-webkit-animation: 1s 1s ease infinite alternate;
+	-webkit-animation-name: tail2;
+	-moz-animation: 1s 1s ease infinite alternate;
+	-moz-animation-name: tail2;
+	-ms-animation: 1s 1s ease infinite alternate;
+	-ms-animation-name: tail2;
+	-o-animation: 1s 1s ease infinite alternate;
+	-o-animation-name: tail2;
+	animation: 1s 1s ease infinite alternate;
+	animation-name: tail2;
+}
+
+
+/*辫子*/
+
+@-webkit-keyframes tail2 {
+	from {
+		-webkit-transform: rotate(-28deg);
+	}
+	to {
+		-webkit-transform: rotate(-7deg);
+	}
+}
+
+@-moz-keyframes tail2 {
+	from {
+		-moz-transform: rotate(-28deg);
+	}
+	to {
+		-moz-transform: rotate(-7deg);
+	}
+}
+
+@-ms-keyframes tail2 {
+	from {
+		-ms-transform: rotate(-28deg);
+	}
+	to {
+		-ms-transform: rotate(-7deg);
+	}
+}
+
+@-o-keyframes tail2 {
+	from {
+		-o-transform: rotate(-28deg);
+	}
+	to {
+		-o-transform: rotate(-7deg);
+	}
+}
+
+@keyframes tail2 {
+	from {
+		transform: rotate(-28deg);
+	}
+	to {
+		transform: rotate(-7deg);
+	}
+}
+
+.face1 {
+	position: absolute;
+	top: 120px;
+	left: 111px;
+	width: 50px;
+	height: 80px;
+	border-left: 3px solid black;
+	border-top: 3px solid black;
+	border-bottom-left-radius: 84%;
+	border-top-right-radius: 57%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 15%;
+}
+
+.face2 {
+	position: absolute;
+	top: 120px;
+	left: 147px;
+	width: 50px;
+	height: 80px;
+	border-right: 3px solid black;
+	border-top: 3px solid black;
+	border-bottom-right-radius: 84%;
+	border-top-left-radius: 57%;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 15%;
+}
+
+
+/*脸*/
+
+.eye1 {
+	position: absolute;
+	top: 143px;
+	left: 125px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	border: 4px solid black;
+	-webkit-transform: scale(0.7, 0.7);
+	-webkit-animation: 2s 2s ease infinite alternate;
+	-webkit-animation-name: eye1;
+	-moz-transform: scale(0.7, 0.7);
+	-moz-animation: 2s 2s ease infinite alternate;
+	-moz-animation-name: eye1;
+	-ms-transform: scale(0.7, 0.7);
+	-ms-animation: 2s 2s ease infinite alternate;
+	-ms-animation-name: eye1;
+	-o-transform: scale(0.7, 0.7);
+	-o-animation: 2s 2s ease infinite alternate;
+	-o-animation-name: eye1;
+	transform: scale(0.7, 0.7);
+	animation: 2s 2s ease infinite alternate;
+	animation-name: eye1;
+}
+
+@-webkit-keyframes eye1 {
+	from {
+		-webkit-transform: scale(0.7, 0.7);
+	}
+	to {
+		-webkit-transform: scale(1, 1);
+	}
+}
+
+@-moz-keyframes eye1 {
+	from {
+		-moz-transform: scale(0.7, 0.7);
+	}
+	to {
+		-moz-transform: scale(1, 1);
+	}
+}
+
+@-ms-keyframes eye1 {
+	from {
+		-ms-transform: scale(0.7, 0.7);
+	}
+	to {
+		-ms-transform: scale(1, 1);
+	}
+}
+
+@-o-keyframes eye1 {
+	from {
+		-o-transform: scale(0.7, 0.7);
+	}
+	to {
+		-o-transform: scale(1, 1);
+	}
+}
+
+@keyframes eye1 {
+	from {
+		transform: scale(0.7, 0.7);
+	}
+	to {
+		transform: scale(1, 1);
+	}
+}
+
+.eye2 {
+	position: absolute;
+	top: 143px;
+	left: 172px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	border: 4px solid black;
+	-webkit-transform: scale(0.7, 0.7);
+	-webkit-animation: 2s 2s ease infinite alternate;
+	-webkit-animation-name: eye2;
+	-moz-transform: scale(0.7, 0.7);
+	-moz-animation: 2s 2s ease infinite alternate;
+	-moz-animation-name: eye2;
+	-ms-transform: scale(0.7, 0.7);
+	-ms-animation: 2s 2s ease infinite alternate;
+	-ms-animation-name: eye2;
+	-o-transform: scale(0.7, 0.7);
+	-o-animation: 2s 2s ease infinite alternate;
+	-o-animation-name: eye2;
+	transform: scale(0.7, 0.7);
+	animation: 2s 2s ease infinite alternate;
+	animation-name: eye2;
+}
+
+@-webkit-keyframes eye2 {
+	from {
+		-webkit-transform: scale(1, 1);
+	}
+	to {
+		-webkit-transform: scale(0.7, 0.7);
+	}
+}
+
+@-moz-keyframes eye2 {
+	from {
+		-moz-transform: scale(1, 1);
+	}
+	to {
+		-moz-transform: scale(0.7, 0.7);
+	}
+}
+
+@-ms-keyframes eye2 {
+	from {
+		-ms-transform: scale(1, 1);
+	}
+	to {
+		-ms-transform: scale(0.7, 0.7);
+	}
+}
+
+@-o-keyframes eye2 {
+	from {
+		-o-transform: scale(1, 1);
+	}
+	to {
+		-o-transform: scale(0.7, 0.7);
+	}
+}
+
+@keyframes eye2 {
+	from {
+		transform: scale(1, 1);
+	}
+	to {
+		transform: scale(0.7, 0.7);
+	}
+}
+
+
+/*眼睛*/
+
+.nose {
+	position: absolute;
+	top: 158px;
+	left: 147px;
+	width: 10px;
+	height: 10px;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 100%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 100%;
+}
+
+
+/*鼻子*/
+
+.mouth {
+	position: absolute;
+	top: 166px;
+	left: 140px;
+	width: 30px;
+	height: 17px;
+	border-bottom: 4px solid black;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+
+/*嘴巴*/

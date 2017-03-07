@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="../script/dropdown.js"></script>
+		<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/npm.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>客户管理后台登录</title>
+		<style type="text/css">
+			body {
+				background-color: #a9a7a7;
+			}
+			.btn {
+				margin-bottom: 15px;
+			}
+			
+			.dropdown-menu {
+				padding: 0;
+			}
+			
+			.dropdown-menu li {
+				background-color: #87b7ff;
+				text-align: center;
+			}
+			/*下拉菜单样式和位置*/
+			.class {
+				margin-top: 10px;
+			}
+			.col-sm-9{
+				background: #b0bfc3;
+			}
+			.visible-*-inline-block{
+				float: left;
+				height: 300px;
+			}
+			.col-sm-2{
+				font-size: 12px;
+				text-align: center;
+			}
+			.dropdown-menu{
+				position: relative;
+				float: none;
+			}
+			.btn-group-vertical{
+				display: block;
+			}
+			/*小于768*/
+		</style>
+	</head>
+
+<body>
+	<header>
+		<div class="page-header">
+			<h1>
+			<small>欢迎使用后台管理系统</small>
+		</h1>
+		</div>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+  					</button>
+  					<a class="navbar-brand" href="#">首页</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  					<ul class="nav navbar-nav">
+   						 <li class="active"><a href="#">客户管理</a></li>
+    					<li><a href="#">客户关怀</a></li>
+    					<li><a href="#">营销模式</a></li>
+    					<li><a href="#">系统设置</a></li>
+ 					 </ul>
+				</div><!--导航栏设置-->
+			</div>
+		</nav><!--导航栏-->
+	</header>
+	<!--头部-->
+		<section>
+		<div class="container-fluid ">
+        	<div class="row">
+				<div class="col-sm-2">
+					<div class="btn-group-vertical" role="group " aria-label="...">
+   						<button type="button " class="btn btn-primary ">全部会员</button>
+  					<div class="btn-group " role="group ">
+   						 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     					休眠会员
+     					 <span class="caret"></span>
+    					</button>
+    				<ul class="dropdown-menu">
+     					 <li><a href="#">休眠一周的会员</a></li>
+      					<li><a href="#">休眠一月的会员</a></li>
+      					<li><a href="#">休眠三月的会员</a></li>
+      					<li><a href="#">无效的会员</a></li>
+    				</ul>
+ 					 </div><!--休眠会员-->
+ 					 <div class="btn-group" role="group">
+   						 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  							未付款的会员
+     					 <span class="caret"></span>
+    					</button>
+    				<ul class="dropdown-menu">
+     					 <li><a href="#">未付款3天内</a></li>
+      					<li><a href="#">未付款5天内</a></li>
+      					<li><a href="#">未付款7天内</a></li>
+      					<li><a href="#">订单失效</a></li>
+    				</ul>
+ 					 </div><!--未付款的会员-->
+ 					 <div class="btn-group" role="group">
+   						 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  							购物车的会员
+     					 <span class="caret"></span>
+    					</button>
+    				<ul class="dropdown-menu">
+     					 <li><a href="# ">加入购物车一周内</a></li>
+      					<li><a href="# ">加入购物车三周内</a></li>
+      					<li><a href="# ">加入购物车一月内</a></li>
+      					<li><a href="# ">加入购物车一月以上</a></li>
+    				</ul>
+ 					 </div><!--购物车的会员-->
+ 					 <div class="btn-group" role="group">
+   						 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  							交易成功的会员
+     					 <span class="caret"></span>
+    					</button>
+    				<ul class="dropdown-menu">
+     					 <li><a href="#">只购买一次的会员</a></li>
+      					<li><a href="#">购买两次的会员</a></li>
+      					<li><a href="#">购买两次及以上的</a></li>
+      					<li><a href="#">永久会员</a></li>
+    				</ul>
+ 					 </div><!--交易成功的会员-->
+ 					 <button type="button" class="btn btn-primary">关于系统</button>
+				</div>
+				</div>
+					
+				<!-- </div>左侧导航栏部分-->
+            <div class="col-sm-9 col-sm-offset-1">
+              	<form class="form-inline">
+  						<div class="form-group">
+    						<label for="exampleInputName2 ">会员名：</label>
+							<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  						</div>
+  						<br />
+  						<div class="form-group">
+   							<label for="exampleInputEmail2 ">最后下单时间：</label>
+    						<input type="text " class="form-control " id="exampleInputEmail2 ">至<input type="text " class="form-control " id="exampleInputEmail2 ">
+ 						</div>
+  							<button type="submit" class="btn btn-primary class">搜索</button>
+				</form>
+				<hr />
+				<div class="table-responsive">
+				<table class="table table-striped table-bordered">
+				<tr>
+					<td>会员名</td>
+					<td>会员姓名</td>
+					<td>购买商品数量</td>
+					<td>交易次数</td>
+					<td>消费金额</td>
+					<td>平均消费</td>
+					<td>最后下单时间</td>
+					<td>所在地</td>
+					<td>操作</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q1 "><label for="q1">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q2"><label for="q2">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q3"><label for="q3">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q4"><label for="q4">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q5 "><label for="q5">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q6"><label for="q6">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q7"><label for="q7">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q8"><label for="q8">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q9"><label for="q9">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q10"><label for="q10">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="q11"><label for="q11">tb_qqq</label></td>
+					<td>王小五</td>
+					<td>201</td>
+					<td>10</td>
+					<td>1234</td>
+					<td>123</td>
+					<td>2011-06-01</td>
+					<td>上海</td>
+					<td>购物车（233） 订单（10）</td>
+				</tr>
+				</table>
+				</div>
+            </div><!--主体内容部分-->
+        </div>
+    </div>
+	</section>
+	<hr />
+	<footer>
+		<p class="text-center">
+			Copyright ©*****   京ICP备08010314号-19 京公网安备110000000006号
+		</p>
+	</footer>
+</html>

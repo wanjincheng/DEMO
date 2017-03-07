@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 13px;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    min-width: 810px;
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+    width: 90px;
+    height: 70px;
+    text-align: center;
+}
+
+ul,
+li {
+    background-color: #F0F0F0;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header {
+    float: right;
+    margin-top: 10px;
+}
+
+.headera {
+    font-weight: bold;
+    line-height: 36px;
+    margin-left: 13px;
+}
+
+
+/*导航栏字体*/
+
+.header a:link {
+    color: #333;
+}
+
+.header a:hover {
+    color: #00c;
+    cursor: pointer;
+}
+
+
+/*头部导航栏信息*/
+
+.select {
+    top: 0;
+    display: inline;
+    height: 100%;
+    position: relative;
+}
+
+.span {
+    z-index: 56;
+    position: relative;
+    padding: 6px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: #2d78f4;
+    color: #F0F0F0;
+}
+
+.none {
+    z-index: 55;
+    top: 0;
+    display: inline;
+    display: none;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    background-color:#F0F0F0;
+    width: 90px;
+}
+
+.nonea {
+    text-decoration: none;
+    line-height: 15px;
+}
+
+.select:hover .none {
+    display: block;
+}
+
+.select:hover .span {
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: #F0F0F0;
+    padding: 6px 6px 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.li1 {
+    padding-top: 50px;
+}
+
+
+/*下拉菜单样式*/
+
+.conter {
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.img1 {
+    width: 270px;
+    height: 129px;
+    margin: 0 0 30px 10px;
+}
+
+.img {
+    position: relative;
+    right: 44px;
+    top: 4px;
+}
+
+
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 540px;
+    height: 31px;
+    position: relative;
+    left: 20px;
+    outline: 0;
+    border: 1px solid #999;
+    text-indent: 7px;
+}
+
+input[type="text"]:hover {
+    border: 1px solid #010C1D;
+}
+input[type="text"]:focus{
+    border: 1px solid #2A88E8;
+}
+button {
+    width: 100px;
+    height: 34px;
+    color: white;
+    position: relative;
+    right: 42px;
+    font-size: 15px;
+    background-color: #3385FF;
+    border: 1px solid #2d78f4;
+}
+
+button:hover {
+    background-color: #0959de;
+    cursor: pointer;
+}
+
+
+/*搜索框信息*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 44px;
+}
+
+footer a {
+    color: #999;
+}
+
+p {
+    font-size: 11px;
+}
+.d1{
+    float: left;
+    position: relative;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -290px
+}
+.d2{
+    float: left;
+    position: relative;
+    left: 50%;
+    bottom: 15px;
+    margin-left: 0px;
+    line-height: 25px;
+   
+}
+.span1{
+    display: inline-block;
+    width: 60px;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+/*底部信息*/

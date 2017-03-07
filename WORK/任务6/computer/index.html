@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>简易计算机</title>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+<div class="center">
+	<h1>计算器</h1>
+	<div class="box">
+		<div class="input_box">
+			<input type="text" id="inp" value="0" readonly />
+		</div><!--屏幕输出框-->
+		<div class="button">
+			<ul class="color">
+				<li><button type="button" id="b_s" onclick="sin();">sin</button></li>
+				<li><button type="button" id="b_x2" onclick="twice();">x^2</button></li>
+				<li class="co1"><button type="button" id="b_t" onclick="back();">退格</button></li>
+				<li class="co1"><button type="button" id="b_qp" onclick="clearW()">清屏</button></li>
+			</ul>
+			<ul class="color1">
+				<li><button type="button" id="b_c" onclick="cos();">cos</button></li>
+				<li><button type="button" id="b_x3" onclick="thrTimes();">x^3</button></li>
+				<li><button type="button" id="b_q" onclick="more();">%</button></li>
+				<li class="co2"><button type="button" id="b_ch" onclick="except();">/</button></li>
+			</ul>
+			<ul>
+				<li><button type="button" id="b_7" onclick="numm(7);">7</button></li>
+				<li><button type="button" id="b_8" onclick="numm(8);">8</button></li>
+				<li><button type="button"  id="b_9" onclick="numm(9);">9</button></li>
+				<li class="co2"><button type="button" id="b_chen" onclick="ride();">*</button></li>
+			</ul>
+			<ul>
+				<li><button type="button" id="b_4" onclick="numm(4);">4</button></li>
+				<li><button type="button" id="b_5" onclick="numm(5);">5</button></li>
+				<li><button type="button" id="b_6" onclick="numm(6);">6</button></li>
+				<li class="co2"><button type="button" id="b_jian" onclick="reduce();" >-</button></li>
+			</ul>
+			<ul>
+				<li><button type="button" id="b_1" onclick="numm(1);">1</button></li>
+				<li><button type="button" id="b_2" onclick="numm(2);">2</button></li>
+				<li><button type="button" id="b_3" onclick="numm(3);" value="3">3</button></li>
+				<li class="co2"><button type="button" id="b_jia" onclick="plus();">+</button></li>
+			</ul>
+			<ul>
+				<li><button type="button" id="b_0" onclick="numm(0);" value="0">0</button></li>
+				<li><button type="button" id="b_dian" onclick="spot();">.</button></li>
+				<li><button type="button" id="b_zf" onclick="numb();">+/-</button></li>
+				<li class="co3"><button type="button" id="b_d" value="=" onclick="equal();">=</input></li>
+			</ul>
+		</div><!--字符输入框-->
+	</div><!--计算机容器-->
+</div><!--主体-->
+</body>
+<script type="text/javascript" language="JavaScript" src="index.js"></script>
+</html>
