@@ -1,5 +1,5 @@
 # 学习WEB过程中的一些小的DEMO  
-##目录Demo/demo1  
+## 目录Demo/demo1  
 ### ./3D魔方  
  *  使用css3 transform 进行3D转换
  * 使用css3 animation 制作动画
